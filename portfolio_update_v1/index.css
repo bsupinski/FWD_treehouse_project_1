@@ -28,11 +28,12 @@ a:hover {
 }
 nav {
   width: 100%;
-  background: darkslategray;
+  background: white;
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
+  border-bottom: 2px solid gray;
 }
 .nav {
   display: flex;
@@ -46,7 +47,7 @@ nav {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: black;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -55,7 +56,7 @@ nav {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: black;
 }
 
 header {
@@ -77,7 +78,7 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid darkslategray;
+  border: 3px solid gray;
   transition: all .75s;
   
 }
@@ -93,26 +94,33 @@ header .profile-image:hover {
   margin: 10px auto;
 } 
 .name{
-  text-shadow:4px 5px 3px darkslategray;
+  text-shadow:4px 5px 3px gray;
 
 }
 
 .location {
-  background-color: darkslategray;
+  background-color: gray;
   color: white;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 section {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
+  min-width: 200px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
+
 section:hover {
-  border-color: darkslategray;
+  border-color:black;
 }
 
 ul.skills {
@@ -123,14 +131,15 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background:darkslategray;
+  background:gray;
   color: white;
   padding: 5px 10px;
   margin: 2px;
+  box-shadow: 2px 4px 2px lightgray;
 }
 
 .skills li:nth-child(odd) {
-  background:darkslategray;
+  background:gray;
 }
 
 footer {
@@ -142,7 +151,7 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: 1em;
-  color: darkslategray;
+  color: white;
 }
 
 footer ul {
@@ -186,10 +195,12 @@ a.social:hover {
   
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       max-width: 1200px;
       -ms-flex-pack: distribute;
-      justify-content: space-around;
+      justify-content:space-around;
       margin: 0 auto;
   }
   .wrapper{
@@ -207,6 +218,11 @@ a.social:hover {
     padding: 0 30px;
   }
 
+  .info_one,
+  .info_two{
+    min-height: 395px;
+  }
+  
 
   main {
     padding-top: 20px;
